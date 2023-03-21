@@ -28,7 +28,6 @@ class Stack:
         self.top = node
 
 
-
     def pop(self):
         """
         Метод для удаления элемента с вершины стека и его возвращения
@@ -40,3 +39,7 @@ class Stack:
             return None
         self.top = node.next_node
         return node.data
+
+
+    def __str__(self):
+        return self.top
